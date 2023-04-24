@@ -1,0 +1,297 @@
+/* css for all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#topnav .row {
+    background-color: black;
+    color: white;
+    padding: 10px 2px;
+}
+
+#left-items {
+    display: flex;
+}
+
+.social-icons {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 12px 3px;
+    }
+    .social-icons a:hover i {
+        transform: scale(1.06);
+    }
+    .social-icons .fab {
+        color: white;
+    }
+    #topnav .row {
+        display: none;
+    }
+}
+
+#main-nav {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #344D67;
+}
+
+.navbar-collapse {
+    flex-grow: unset !important;
+    text-align: center;
+}
+
+#main-nav .nav-item a {
+    color: white;
+}
+
+#main-nav .navbar-nav li:hover a {
+    color: #FFC93C;
+}
+
+#servicedown .dropdown-menu {
+    background-color: #344D67;
+    color: black;
+}
+
+#servicedown .dropdown-menu li:hover a {
+    color: #FFC93C;
+}
+
+#footerservices a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerservices a:hover {
+    color: #FFC93C;
+}
+
+#footerlinks a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerlinks a:hover {
+    color: #FFC93C;
+}
+
+#footerproduct a {
+    text-decoration: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    background-color: #FFC93C;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+/* .nav-link.active {
+    color: #FFC93C;
+    background-color: red;
+} */
+
+#clients {
+    margin: 70px auto;
+    text-align: center;
+}
+
+#clients h1 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: black;
+    font-weight: bolder;
+    margin: 30px auto;
+}
+
+.autoplay li img {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#line {
+    border-top: 2px solid black;
+    margin: 60px auto;
+}
+
+#newsletter,
+#followus {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#newsletter h1,
+#followus h1 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: black;
+    font-weight: bolder;
+    margin: 30px auto;
+}
+
+#followus .fab {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#followus .fab:hover {
+    transform: scale(1.04);
+    background-color: #FFC93C;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#tech {
+    padding: 20px auto;
+    margin: 30px auto;
+}
+
+#tech .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tech img {
+    padding: 10px auto;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+#tech h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding: 10px auto;
+    margin: 10px auto;
+    color: white;
+}
+
+#tech .text {
+    background-color: #344D67;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+#types h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding: 10px auto;
+    margin: 10px auto;
+    color: white;
+}
+
+
+/* waving css */
+
+
+/*Waves*/
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 400px;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+}
+
+.ab {
+    color: #446b94;
+}
+
+
+/*Other*/
+
+.unique-color-dark {
+    background-color: #344d67 !important;
+}
+
+.bg-light {
+    background-color: #344d67 !important;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.custom-color {
+    background-color: #344d !important
+}

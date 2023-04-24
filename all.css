@@ -1,0 +1,116 @@
+/* css for all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#topnav .row {
+    background-color: black;
+    color: white;
+    padding: 10px 2px;
+}
+
+#left-items {
+    display: flex;
+}
+
+.social-icons {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 12px 3px;
+    }
+    .social-icons a:hover i {
+        transform: scale(1.06);
+    }
+    .social-icons .fab {
+        color: white;
+    }
+    #topnav .row {
+        display: none;
+    }
+}
+
+#main-nav {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #344D67;
+    margin-top: 50px;
+}
+
+.navbar-collapse {
+    flex-grow: unset !important;
+    text-align: center;
+}
+
+#main-nav .nav-item a {
+    color: white;
+}
+
+#main-nav .navbar-nav li:hover a {
+    color: #FFC93C;
+}
+
+#servicedown .dropdown-menu {
+    background-color: #344D67;
+    color: #FFC93C;
+}
+
+#servicedown .dropdown-menu li:hover a {
+    color: #FFC93C;
+}
+
+#footerservices a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerservices a:hover {
+    color: #FFC93C;
+}
+
+#footerlinks a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerlinks a:hover {
+    color: #FFC93C;
+}
+
+#footerproduct a {
+    text-decoration: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    background-color: #FFC93C;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+/* .nav-link.active {
+    color: #FFC93C;
+    background-color: red;
+} */
+
+.navbar-nav .nav-link:active {
+    background-color: orange;
+    color: white;
+}
